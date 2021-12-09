@@ -1,0 +1,464 @@
+:root{
+    --red:#ff3c2e;
+    --black:#252a34;
+    --blue:#d908a5;
+    --white:#eaeaea;
+    --title:35px;
+    --text:19px;
+ }
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background: rgb(235, 230, 188);
+    font-family: 'Raleway', sans-serif;
+    overflow-x: hidden;
+}
+
+/** Header **/
+#header{
+    width: 100%;
+    position: relative;
+}
+/** Img Header **/
+.img-header{
+    background: url(https://i0.wp.com/codigoespagueti.com/wp-content/uploads/2021/10/Kimetsu-no-Yaiba-productos-Halloween.jpg?fit=1280%2C720&quality=80&ssl=1);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-color:rgba(0,0,0,0.6);
+    background-blend-mode: soft-light;
+    
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+.img-header .header-info{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 100;
+}
+.img-header .header-info h2{
+    color:#fff;
+    font-size: 70px;
+    font-weight: normal;
+}
+.img-header .header-info hr{
+    border:none;
+    outline: none;
+    height: 2px;
+    background: rgb(154, 248, 212);
+    width: 600px;
+    margin:15px 0px;
+}
+.img-header .header-info p{
+    color:#fff;
+    font-size: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+/** Navegation Menu **/
+.menu{
+    width: 100%;
+    height: 66px;
+    background: #ffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 4px solid #77e6ee;
+}
+.menu .btn-menu{display: none;}
+.menu .log-box{margin-left: 50px;}
+.menu .log-box h1{
+    font-weight: normal;
+    font-size:20px;
+    color:#000;
+}
+.menu .list-container{margin-right:50px; transition: 0.5s;}
+.menu .list-container .lists{display: flex;}
+.menu .list-container .lists li{list-style: none;}
+.menu .list-container .lists li a{
+    text-decoration: none;
+    color:#000;
+    border-radius: 15px;
+    font-size: 19px;
+    padding:5px;
+    margin:0px 10px;
+    transition: 0.3s;
+}
+.menu .list-container .lists li a.active{
+    background:#9fe267;
+    color:#fff;
+}
+.menu .list-container .lists li a:hover{
+    background:#cec5db;
+    color:#fff;
+}
+.sticky{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+}
+
+/** Main **/
+#main{
+    width: 100%;
+}
+
+/** Mission **/
+.evento{
+   width: 100%;
+} 
+.evento-info{
+    width: 80%;
+    margin:100px auto;
+}
+.evento-info h2{
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: normal;
+    color:#000;
+}
+.evento-info p{
+    font-size: 19px;
+    color:#000;
+    line-height: 40px;
+    margin:30px 0px;
+    text-align: center;
+}
+.evento .juego-img{
+    width: 50%;
+    margin:auto;
+}
+.evento .juego-img img{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    transform:rotate(-3deg);
+    cursor: pointer;
+}
+
+/** Frase **/
+.frase-chida{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    margin-top:100px;
+}
+.frase-chida .figure-img{
+    background: url(https://areajugones.sport.es/wp-content/uploads/2021/09/inuyasha-kakentsu-hen.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size:cover;
+    background-color:rgba(0,0,0,0.5);
+    background-blend-mode: soft-light;
+
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.frase-chida .figure-img h4{
+    width: 80%;
+    color:#fff;
+    font-size: 40px;
+    font-weight: normal;
+    text-align: center;
+    line-height: 60px;
+}
+.skew-abajo{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	border-width: 0 0 5vh 100vw;
+	border-style: solid;
+	border-color: transparent transparent #fff transparent;
+}
+.skew-arriba{
+	position: absolute;
+	top: 0;
+	left: 0;
+	border-width: 5vh 100vw 0 0;
+	border-style: solid;
+	border-color: rgb(241, 241, 241) transparent transparent transparent;
+	z-index: 10;
+}
+.testimonios{
+    width: 100%;
+    margin-top: 120px;
+}
+.testimonios .testimonios-title{
+    width: 50%;
+    margin:auto;
+    text-align: center;
+}
+.testimonios .testimonios-title h2{
+    font-size: 50px;
+    font-weight: normal;
+    color: var(--black);
+    margin-bottom: 10px;
+}
+.testimonios .testimonios-title hr{
+    width: 60%;
+    height: 2px;
+    margin:auto;
+    background: var(--black);
+}
+.testimonios .box-testimonio{
+    width: 90%;
+    margin: 80px auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.testimonios .box-testimonio .card-testimonio{
+    width: 45%;
+    margin: 20px;
+}
+.testimonios .box-testimonio .card-testimonio .card-img{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.testimonios .box-testimonio .card-testimonio .card-img img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+}
+.testimonios .box-testimonio .card-testimonio .testimonio-text{
+    border: 2px solid var(--red);
+    padding:20px;
+    border-radius: 20px;
+    transition: 0.1s;
+    cursor: pointer;
+}
+.testimonios .box-testimonio .card-testimonio .testimonio-text h4{
+    font-size: 30px;
+    font-weight: 400;
+    color: var(--red);
+    text-align: center;
+    margin-bottom: 10px;
+    transition: 0.1s;
+}
+.testimonios .box-testimonio .card-testimonio .testimonio-text p{
+    font-size: 20px;
+    text-align: center;
+    line-height: 40px;
+    color: var(--black);
+}
+.testimonios .box-testimonio .card-testimonio .testimonio-text:hover{
+    border: 2px solid var(--blue);
+}
+.testimonios .box-testimonio .card-testimonio .testimonio-text:hover h4{
+    color: var(--blue);
+}
+
+@media only screen and (max-width:890px){
+    .testimonios .box-testimonio .card-testimonio .card-img img{width: 200px; height: 200px;}
+    .testimonios .box-testimonio .card-testimonio{width: 100%;}
+    .testimonios .box-testimonio .card-testimonio .testimonio-text h4{font-size: 25px;}
+    .testimonios .box-testimonio .card-testimonio .testimonio-text p{font-size: 17px; line-height: 35px;}
+}
+/** Gallery **/
+.gallery-section{
+    width:100%;
+    margin:150px 0px ;
+}
+.gallery-container{
+    width: 80%;
+    margin:auto;
+    
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,350px);
+}
+.gallery-container .img-card{
+    overflow:hidden;
+}
+.gallery-container .img-card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;   
+    transition: 0.5s; 
+}
+.gallery-container .img-card:hover img{
+    transform: scale(1.5) rotate(30deg);
+}
+
+/** Modal Gallery **/
+.modal-gallery{
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background:rgba(0,0,0,0.9);
+    padding:40px;
+    z-index: 99999;
+    display: none;
+}
+.modal-gallery .close-modal{
+    position: absolute;
+    top:20px;
+    right: 20px;
+    color:#fff;
+    font-size:30px;
+    cursor: pointer;
+}
+.modal-gallery #imgModal{
+    width:60%;
+    margin:auto;
+    display: block;
+    height: 400px;
+    object-fit: cover;
+}
+.modal-gallery .captionModal{
+     color:#fff;
+     display:flex;
+     justify-content: center;
+     font-size:19px;
+     margin:20px 0px;
+}
+.gallery-list{
+    width: 100%;
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(9,1fr);
+    grid-template-rows: repeat(1,100px);
+}
+.gallery-list img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.gallery-list img:hover{
+    opacity:0.5;
+}
+
+/** Go Top **/
+.go-top{
+    position: fixed;
+    bottom:30px;
+    right: 100%;
+    width: 50px;
+    height: 50px;
+    background:#fff;
+    border:3px solid #b7a0d8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.go-top span{
+    font-size:20px;
+    color:#000;
+}
+
+/** Footer **/
+#footer{
+    width:100%;
+    height: 60px;
+    background:#000;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
+#footer p{
+    color:#fff;
+    font-size:19px;
+}
+
+@media only screen and (max-width:800px) {
+    
+    /** Img Header **/
+    .img-header .header-info h2{
+        font-size: 50px;
+    }
+    .img-header .header-info hr{
+        width: 400px;
+    }
+    .img-header .header-info p{
+        font-size: 19px;
+    }
+
+    /** Navegation Menu **/
+    .menu .btn-menu{
+        display: block;
+        position: absolute;
+        top:20px;
+        right: 50px;
+        font-size: 30px;
+        color:#000;
+        cursor: pointer;
+    }
+    .menu .list-container{
+        position: absolute;
+        top:66px;
+        left: -100%;
+        width: 100%;
+        height: calc(100vh - 66px);
+        background: #ffff;
+    }
+    .menu .list-container .lists{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .menu .list-container .lists li{
+        margin:8px 0px;
+    }
+    .menu .list-container .lists li a{
+        font-size: 20px;
+    }
+    .menu .list-container .lists li a.active{
+        background: none;
+        color:#6639a6;
+    }
+    .menu .list-container .lists li a:hover{
+        background: none;
+        color:#6639a6;
+    }
+
+    /** Mission **/
+    .evento-info h2{font-size: 30px;}
+    .evento-info p{font-size: 17px;}
+    .evento .juego-img{width: 80%;}
+
+    /** Elon Musk **/
+    .frase-chida .figure-img h4{font-size: 30px; line-height: 50px;}
+    
+    /** Gallery **/
+    .gallery-container{
+    grid-template-columns:1fr;
+    grid-template-rows: repeat(9,350px);
+    }
+
+    /** Modal **/
+    .gallery-list{
+       display: none;
+    }
+
+}

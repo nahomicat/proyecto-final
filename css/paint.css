@@ -1,0 +1,63 @@
+@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css";
+* {
+  margin:0px;
+  padding:0px;
+  box-sizing:border-box;
+}
+body {
+    background-image: url("https://pm1.narvii.com/6522/63b9d4662269d7af903cf4a579e2e42f907d9e27_hq.jpg");
+}
+.app {
+  position:fixed;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  width:650px;
+  height:650px;
+  font-family:"Raleway", sans-serif;
+}
+.app .controls {
+  height:50px;
+  display:flex;
+  align-items:center;
+  background:rgb(226, 161, 99);
+  padding:0px 10px;
+}
+.app .controls .title {
+  font-weight:600;
+  color:rgb(10, 10, 10);
+  width:80px;
+}
+.app .controls .type,
+.app .controls .size,
+.app .controls .color {
+  margin: 0px 8px;
+}
+.app .controls .type input {
+  display:none;
+}
+.app .controls .type label {
+  width:30px;
+  height:30px;
+  display:inline-block;
+  text-align:center;
+  line-height:30px;
+  margin:0px 2px;
+  cursor:pointer;
+}
+.app .controls .type input:checked + label {
+  background:rgb(189, 163, 19);
+  color:rgb(209, 95, 95);
+  border-radius:50%;
+}
+.app .controls .size input {
+  height:10px;
+}
+.app .controls .actions {
+  flex:1;
+  text-align:right;
+}
+.app .controls .actions button {
+  padding:5px 7px;
+  cursor:pointer;
+}

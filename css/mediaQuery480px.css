@@ -1,0 +1,13 @@
+.main .inputFields {
+  width: 90%;
+  font-size: 1.2em;
+}
+
+.pokemonData {
+  display: flex;
+  flex-direction: column;
+}
+
+.pokemonData .container {
+  width: 65%;
+}
